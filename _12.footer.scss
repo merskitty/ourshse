@@ -1,0 +1,47 @@
+.footer {
+  padding: 5rem;
+
+  background-image: url(https://i.pinimg.com/736x/7e/d3/26/7ed326c8a2ba633f95fb6dc2854912da.jpg);
+  @extend %bg;
+  background-position: 40% 30% ;
+  @include mq-lg{
+    background-image: url(https://i.pinimg.com/474x/36/01/45/360145fce69b2f1bea4c29f46415cff1.jpg);
+    padding: 8rem;
+    
+  }
+
+  @include mq-lg{
+    background-image: url(https://i.pinimg.com/736x/3c/e0/3b/3ce03b2e31385f6e989c7bff33cb5f38.jpg);
+    
+    
+  }
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    font-style: italic;
+    font-size: 0.5rem;
+    font-family: "Pacifico", cursive;
+
+    @include mq-s {
+      font-size: fs(xxs);
+    }
+    &_img {
+      width: 4rem;
+      height: 4rem;
+      margin-top: 0.5rem;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    & span {
+      text-shadow: 0.2rem 0.2rem 0.2rem var(--color-tertiary-m);
+    }
+  }
+}
