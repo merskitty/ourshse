@@ -1,0 +1,45 @@
+.quote {
+  display: grid;
+  place-items: center;
+  @extend %sec-padding;
+  font-size: calc(1.25rem + 1vw);
+  @extend %bg;
+  background-image: linear-gradient(
+      to right,
+      var(--color-primary-m),
+      var(--color-primary-m)
+    ),
+    url(https://i.pinimg.com/736x/06/13/c7/0613c7f5205f1a698c7d19b2919e106e.jpg);
+  opacity: 1;
+  background-position: 60% 70%;
+  height: 45vh;
+  &:nth-of-type(2) {
+    background-image: url(https://i.pinimg.com/736x/5b/86/ab/5b86ab86721669eb103d041f80dc4689.jpg);
+    opacity: 0.9;
+  }
+  &-content {
+    border-radius: 2rem;
+
+    padding: 5rem 0;
+
+    text-shadow: 2px 3px 5px var(--color-primary);
+
+    q {
+      color: transparent;
+      font-weight: fw(bold);
+      background: linear-gradient(to bottom right, rgb(243, 178, 178), rgb(243, 167, 243), rgb(245, 118, 118));
+
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+}
+
+
+.quote-container{
+  display: grid;
+  grid-auto-flow: row;
+  @include mq-lg{
+    grid-auto-flow: column;
+  }
+}

@@ -1,0 +1,65 @@
+.time {
+  height: 100vh;
+  @extend%bg;
+  @extend %sec-padding;
+  background-image: url(https://i.pinimg.com/736x/2d/4b/d2/2d4bd22604885e4f8b84ba4c3785bd6d.jpg);
+  background-position: 50% 70%;
+  font-size: fs(xs);
+  @include mq-s{
+    font-size: fs(s);
+  }
+  @include mq-lg{
+    background-image: url(https://i.pinimg.com/736x/c4/08/4c/c4084cc9f3d254b5d8a12e0ede225361.jpg);
+  }
+
+  &-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:5em;
+    @include mq-s{
+      line-height:3em;
+    }
+  }
+
+  & p {
+    color: var(--color-primary);
+    text-shadow: 8px 2px 6px var(--color-quinary);
+  }
+
+  & p:nth-of-type(1) {
+    margin-top: 3rem;
+    margin-bottom: 0.5em;
+    font-size: fs(xl);
+  }
+
+  & p:nth-of-type(3) {
+    margin-right: 6rem;
+  }
+
+  & p:nth-of-type(4) {
+    margin-left: 6rem;
+  }
+
+  & p:last-of-type {
+    margin-top: 8rem;
+   
+    font-style: italic;
+    font-size: fs(xs);
+    
+    @include mq-xl{
+      margin-top: 2rem;
+    }
+
+  }
+
+  & span {
+    color: var(--color-primary);
+    padding: 0.8rem;
+    background-color: var(--color-tertiary-m);
+    margin-right: 3px;
+  }
+}
