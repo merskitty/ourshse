@@ -1,17 +1,17 @@
 .footer {
   padding: 5rem;
 
-  background-image: url(https://i.pinimg.com/736x/7e/d3/26/7ed326c8a2ba633f95fb6dc2854912da.jpg);
+  background-image: url(/upload/img/gallery/sesh.jpg);
   @extend %bg;
   background-position: 40% 30% ;
   @include mq-lg{
-    background-image: url(https://i.pinimg.com/474x/36/01/45/360145fce69b2f1bea4c29f46415cff1.jpg);
+    background-image: url(/upload/img/gallery/sesh.jpg);
     padding: 8rem;
     
   }
 
   @include mq-lg{
-    background-image: url(https://i.pinimg.com/736x/3c/e0/3b/3ce03b2e31385f6e989c7bff33cb5f38.jpg);
+    background-image: url(/upload/img/gallery/sesh.jpg);
     
     
   }
